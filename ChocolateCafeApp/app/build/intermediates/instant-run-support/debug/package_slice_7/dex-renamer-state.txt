@@ -1,0 +1,4 @@
+#Tue Jun 19 14:56:52 PDT 2018
+base.0=E\:\\Douglas College\\3rd Term\\CSIS 3175\\Lab6\\ChocolateCafeApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex

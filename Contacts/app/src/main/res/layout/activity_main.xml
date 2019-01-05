@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.contacts.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:text="ID"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:text="Name"
+            android:textSize="14sp"
+            android:layout_below="@+id/idTxt"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="37dp"
+            android:text="Phone"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/idTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignLeft="@+id/nameTxt"
+            android:layout_alignStart="@+id/nameTxt"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView10"
+            android:layout_alignLeft="@+id/contactTxt"
+            android:layout_alignStart="@+id/contactTxt"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/contactTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_toRightOf="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp"
+        android:text="Add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="22dp"
+        android:text="Search"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/btnAdd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="22dp"
+        android:text="Delete"
+        app:layout_constraintLeft_toRightOf="@+id/btnSearch"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        android:layout_marginStart="7dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Update"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Show All"
+        app:layout_constraintLeft_toRightOf="@+id/btnUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+        android:layout_marginStart="8dp" />
+
+    <TableLayout
+        android:id="@+id/theTable"
+        android:layout_width="347dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
