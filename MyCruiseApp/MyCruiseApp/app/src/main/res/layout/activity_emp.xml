@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Emp_textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guest ID" />
+
+        <TextView
+            android:id="@+id/gtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/guestFN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/guestLN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Last Name" />
+
+        <Spinner
+            android:id="@+id/deptNum_fk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="dept id" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEmpAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Guest" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:id="@+id/theEmpTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+
+        </TableLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card">
+
+        <TextView
+            android:id="@+id/txtPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Payment"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtCCNumber"
+            android:layout_width="216dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/txtPayment"
+            android:layout_centerHorizontal="true"
+            android:digits=" 1234567890"
+            android:gravity="center"
+            android:hint="Credit Card Number"
+            android:inputType="number"
+            android:maxLength="19"
+            android:nextFocusDown="@+id/imageButton1"
+            android:nextFocusLeft="@+id/editText1"
+            android:nextFocusRight="@+id/imageButton1"
+            android:nextFocusUp="@+id/editText1"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#999999" />
+
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCCNumber"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textVisiblePassword"
+            android:nextFocusDown="@+id/imageButton1"
+            android:nextFocusLeft="@+id/editText1"
+            android:nextFocusRight="@+id/imageButton1"
+            android:nextFocusUp="@+id/editText1"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#999999"
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/txtCVV"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassword"
+            android:layout_centerHorizontal="true"
+            android:digits="1234567890"
+            android:gravity="center"
+            android:hint="CVV"
+            android:inputType="number"
+            android:maxLength="3"
+            android:nextFocusDown="@+id/imageButton1"
+            android:nextFocusLeft="@+id/editText1"
+            android:nextFocusRight="@+id/imageButton1"
+            android:nextFocusUp="@+id/editText1"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#999999" />
+
+        <EditText
+            android:id="@+id/txtExpireDate"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCVV"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:hint="Expire Date"
+            android:inputType="date"
+            android:nextFocusDown="@+id/imageButton1"
+            android:nextFocusLeft="@+id/editText1"
+            android:nextFocusRight="@+id/imageButton1"
+            android:nextFocusUp="@+id/editText1"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#999999"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="Pay the Bill" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

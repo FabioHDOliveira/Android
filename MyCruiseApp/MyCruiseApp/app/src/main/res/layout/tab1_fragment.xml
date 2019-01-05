@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtResultInside"
+        android:layout_width="361dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:text="@string/dream_inside_description"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <TextView
+        android:id="@+id/txtOcupancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtResultInside"
+        android:layout_marginBottom="91dp"
+        android:text="@string/dream_inside_ocupancy"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <ImageView
+        android:id="@+id/imgInside"
+        android:layout_width="186dp"
+        android:layout_height="126dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtResultInside"
+        android:layout_marginBottom="118dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/txtOcupancy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996"
+        app:srcCompat="@drawable/dreaminside" />
+
+    <TextView
+        android:id="@+id/txtTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="136dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/total_price"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultInside"
+        app:layout_constraintStart_toEndOf="@+id/imgInside" />
+
+    <TextView
+        android:id="@+id/txtNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtTotalPrice"
+        android:layout_marginBottom="196dp"
+        android:text="@string/per_night"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotalPrice"
+        app:layout_constraintStart_toEndOf="@+id/imgInside"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtDreamResultPN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtNight"
+        android:layout_marginEnd="24dp"
+        android:text="@string/txtresultpn"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toEndOf="@+id/txtNight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <TextView
+        android:id="@+id/txtResultTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtTotalPrice"
+        android:layout_alignBottom="@+id/txtTotalPrice"
+        android:layout_alignLeft="@+id/txtDreamResultPN"
+        android:layout_alignStart="@+id/txtDreamResultPN"
+        android:text="@string/txtresulttotal"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalPrice" />
+
+</RelativeLayout>
