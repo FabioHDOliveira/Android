@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenclear"
+    tools:context=".Disney_Dream">
+
+    <TextView
+        android:id="@+id/txtDream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="#07ffffff"
+        android:text="Disney Dream"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace" />
+
+    <ImageView
+        android:id="@+id/imgPrice"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="141dp"
+        android:onClick="onClickTest"
+        app:srcCompat="@drawable/overview" />
+
+    <TextView
+        android:id="@+id/txtPrices"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="204dp"
+        android:background="#ffff"
+        android:gravity="center"
+        android:text="BOOKING"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgActivities"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imgPrice"
+        android:layout_marginEnd="22dp"
+        app:srcCompat="@drawable/atractions" />
+
+    <TextView
+        android:id="@+id/txtActivities"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgActivities"
+        android:layout_alignTop="@+id/txtPrices"
+        android:background="#ffff"
+        android:gravity="center"
+        android:text="ACTIVITIES"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imgPrice"
+        android:layout_marginBottom="41dp"
+        app:srcCompat="@drawable/food" />
+
+    <TextView
+        android:id="@+id/txtFood"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtPrices"
+        android:layout_alignTop="@+id/txtAcomodation"
+        android:layout_marginEnd="-2dp"
+        android:background="#ffff"
+        android:gravity="center"
+        android:text="ROOM SERVICE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgPorts"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignStart="@+id/imgActivities"
+        android:layout_alignTop="@+id/imgFood"
+        app:srcCompat="@drawable/acomodation" />
+
+    <TextView
+        android:id="@+id/txtAcomodation"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imgActivities"
+        android:layout_marginBottom="110dp"
+        android:background="#ffff"
+        android:gravity="center"
+        android:text="PORTS OF CALL"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

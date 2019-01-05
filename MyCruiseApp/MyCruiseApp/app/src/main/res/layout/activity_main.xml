@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="@string/txt1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:text="@string/txt2"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnLine"
+        android:layout_width="228dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="127dp"
+        android:background="#73FFFFFF"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:radius="20dp" />
+
+    <Spinner
+        android:id="@+id/spnShip"
+        android:layout_width="228dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="175dp"
+        android:background="#73FFFFFF"
+        android:gravity="center_vertical|center_horizontal|center" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="222dp"
+        android:background="?android:attr/actionModeWebSearchDrawable"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:visibility="visible" />
+
+</RelativeLayout>

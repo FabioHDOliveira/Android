@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">MyCruiseApp</string>
+
+    <string name="txt2">Destination, Activities, and more…</string>
+    <string name="txt1">Get information about your cruise:</string>
+    <string name="title_activity_disney_dream__price">DisneyDream_Price</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="dream_inside_description">With more space than you’d find in same-class rooms on most other cruise ships, our “Standard” is superior.</string>
+    <string name="dream_inside_ocupancy">Occupancy: 2 guests standard</string>
+    <string name="per_night">Per Night:</string>
+    <string name="txtresultpn">$0.00</string>
+    <string name="txtresulttotal">$0.00</string>
+    <string name="total_price">Total Price:</string>
+    <string name="dream_ocean_description">Special features allow Guests requiring accessible accommodations to enjoy comfort, convenience and porthole ocean views.</string>
+    <string name="dream_ocean_ocupancy">Occupancy: 2 guests standard</string>
+    <string name="dream_suit_description">Boasting even more square footage than a Oceanview, these spacious quarters let you spread out.</string>
+    <string name="dream_suit_ocupancy">Occupancy: 2 guests standard</string>
+    <string name="todo">TODO</string>
+    <string name="total_price2">Total Price:</string>
+    <string name="total_price3">Total Price:</string>
+    <string name="per_night2">Per Night:</string>
+    <string name="per_night3">Per Night:</string>
+    <string name="txtresultpn2">$0.00</string>
+    <string name="txtresultpn3">$0.00</string>
+    <string name="txtresulttotal2">$0.00</string>
+    <string name="txtresulttotal3">$0.00</string>
+    <string name="todo2">todo</string>
+    <string name="todo3">todo</string>
+
+
+    <string-array name="Port_names">
+        <item>Disney Dream\n---3 Nights---</item>
+        <item>Disney Dream\n---5 Nights---</item>
+        <item>Disney Dream\n---7 Nights---</item>
+
+    </string-array>
+
+
+    <array name="profile_pics">
+        <item>@drawable/night3</item>
+        <item>@drawable/night5</item>
+        <item>@drawable/night7</item>
+
+    </array>
+
+
+    <string-array name="statues">
+        <item>\nDay 1: Port Canaveral, Florida\n\nDay 2: Nassau, Bahamas\n\nDay 3: Castaway Cay\n\nDay 4: Port Canaveral, Florida</item>
+        <item>Day 1: Port Canaveral, Florida\n\nDay 2: Castaway Cay\n\nDay 3 and 4: Nassau, Bahamas\n\nDay 5: At Sea\n\nDay 6: Port Canaveral, Florida</item>
+        <item>Day 1: Port Canaveral, Florida\n\nDay 2: At Sea\n\nDay 3: Cozumel, Mexico\n\nDay 4: George Town, Grand Cayman\n\nDay 5: Falmouth, Jamaica\n\nDay 6: At Sea\n\nDay 7: Castaway Cay\n\nDay 8: Port Canaveral, Florida</item>
+
+    </string-array>
+
+
+    <string-array name="departsType">
+        <item>Departs Ports Canaveral, Florida</item>
+        <item>Departs Ports Canaveral, Florida</item>
+        <item>Departs Ports Canaveral, Florida</item>
+
+    </string-array>
+
+</resources>
